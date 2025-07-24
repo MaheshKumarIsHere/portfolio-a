@@ -2,6 +2,7 @@
 
 .topbar {
   height: 80px;
+  width: 100%;
   background-color: crimson;
   color: white;
   display: flex;
@@ -9,11 +10,36 @@
   justify-content: space-between;
   gap: 30px;
   padding: 0 20px;
+  
+
+  
+
   .logo {
     flex: 1;
     font-family: "Dancing Script", cursive;
     font-weight: 700;
     font-size: 40px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .hemburger{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    // background-color: rebeccapurple;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+    span{
+      width: 30px;
+      transition: all 1s ease;
+      height: 3px;
+      background-color:white;
+      transform-origin: left;
+    }
+  }
   }
   .links {
     flex: 1;
@@ -40,3 +66,22 @@
     }
   }
 }
+
+
+
+.active{
+    .hemburger{
+      span{
+        
+        &:first-child{
+          transform: rotate(45deg);
+        }
+        &:nth-child(2){
+          display: none;
+        }
+        &:last-child{
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }

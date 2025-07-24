@@ -1,21 +1,23 @@
-.intro-section {
-  height: 100vh;
-}
+.home {
+  .section {
+    height: 100vh;
+  }
 
-.section-intro {
-  background-color: lightblue;
-}
+  .section-intro {
+    background-color: lightblue;
+  }
 
-.section-portfolio {
-  background-color: pink;
-}
-.section-works {
-  background-color: lightgreen;
-}
+  .section-portfolio {
+    background-color: pink;
+  }
+  .section-works {
+    background-color: lightgreen;
+  }
 
-.section-testimonial {
-  background-color: lightseagreen;
-}
-.section-contact {
-  background-color: lightyellow;
+  .section-testimonial {
+    background-color: lightseagreen;
+  }
+  .section-contact {
+    background-color: lightyellow;
+  }
 }

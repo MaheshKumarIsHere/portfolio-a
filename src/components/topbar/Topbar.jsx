@@ -1,9 +1,17 @@
+import { useState } from "react";
 import "./topbar.scss";
 
 function Topbar() {
+  const [showMenu,setShowMenu] = useState(true)
   return (
-    <div className="topbar">
+    <div className={`topbar ${showMenu && "active"}`}>
+      
       <div className="logo">
+        <div className="hemburger" onClick={()=>setShowMenu(!showMenu)}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
         <span>Mahesh.</span>
       </div>
       <ul className="links">
